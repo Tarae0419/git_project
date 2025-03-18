@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sale</title>
+    <style>
+      #sale-layout {
+        display: flex;
+      }
+      .menu-img {
+        background-image: url('./img/blakc_tee_latte.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 200px;
+        height: inherit;
+        margin: 20px;
+      }
+      .right-con {
+        margin: 20px;
+        width: 700px;
+      }
+      .menu-name {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .bold-line {
+        height: 2px;
+        background-color: black;
+      }
+      .menu-desc {
+        font-size: 13px;
+        margin: 10px 0 20px 0;
+      }
+      .flex-between {
+        display: flex;
+        justify-content: space-between;
+      }
+      .content {
+        margin: 10px 0;
+        font-size: 12px;
+      }
+      .alert {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        margin: 10px 0;
+      }
+      .quantity-input {
+        margin-left: 10px;
+        width: 80px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="menu-type">콜드 브루</h1>
+    <div id="sale-layout">
+      <div class="menu-img"></div>
+      <div class="right-con">
+        <div class="menu-name">나이트로 바닐라 크림</div>
+        <hr class="bold-line" />
+        <div class="menu-desc">
+          부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에
+          느껴보세요!
+        </div>
+        <hr />
+        <div class="nutrition-facts">
+          <div class="flex-between">
+            <div class="content">제품 영양 정보</div>
+            <div class="content">Tall(톨)/355ml</div>
+          </div>
+          <hr />
+          <div class="content">1회 제공량(kcal) - 80</div>
+          <div class="content">포화지방(g) - 2</div>
+          <div class="content">단백질(g) - 1</div>
+
+          <div class="alert">알레르기 유발요인: 우유</div>
+        </div>
+        <div class="order-bar">
+          <label for="quantity" class="content">수량</label
+          ><input name="quantity" type="number" class="quantity-input" />
+          <button>주문하기</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
