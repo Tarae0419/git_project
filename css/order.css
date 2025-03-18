@@ -178,17 +178,6 @@ img {
   width: 1200px;
 }
 
-.logo {
-  width: 10%;
-  height: 100px;
-  position: absolute;
-  left: 0;
-  display: flex; /* 자손을 수평나열이 아닌 정가운데 오게 하려고 처리 */
-  justify-content: center; /*가로 중앙 정렬*/
-  align-items: center; /*세로 중앙 정렬*/
-  z-index: 50;
-}
-
 .nav {
   /* background-color: lightseagreen; */
   position: relative;
@@ -199,13 +188,11 @@ img {
 }
 
 .menu {
-  /* background-color: lightsteelblue; */
   width: 80%;
-  float: right;
   display: flex;
   height: 60px;
-  justify-content: right;
   align-items: center;
+  margin: 0 auto;
 }
 
 .menu li {
