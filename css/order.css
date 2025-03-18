@@ -1,0 +1,226 @@
+/* 공통 */
+* {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  border: none;
+}
+
+/*  */
+.product {
+  max-width: 900px;
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.product_category {
+  margin: 3% 0;
+}
+.detail {
+  flex: 1;
+}
+.product_img {
+  max-width: 500px;
+  width: 40%;
+  height: auto;
+}
+.product_name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.product_sub_name {
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.bold_line {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 15px 0;
+}
+.product_info {
+  margin-bottom: 5%;
+}
+.nutrients_content {
+  overflow: hidden;
+  width: 100%;
+}
+.table1 {
+  width: 100%;
+  /* float: left; */
+  border-collapse: collapse;
+}
+.table1 td {
+  padding: 10px;
+}
+.nutrients_info,
+.product_size {
+  width: 46%;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.product_size {
+  text-align: right;
+  margin-right: 2%;
+}
+
+.table_title,
+.table_content {
+  padding: 7px;
+}
+
+.table_content {
+  text-align: right;
+}
+
+.bold_line {
+  border: 0px;
+  border-top: 2px solid #333333;
+}
+
+.thin_line {
+  border: 0px;
+  border-top: 1px solid lightgrey;
+}
+
+.allergy {
+  padding: 10px;
+  background-color: #f4f4f2;
+  border-radius: 5px;
+}
+
+.product_info,
+.nutrients_info,
+.product_size {
+  margin-top: 10px;
+}
+
+.count_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.order_button {
+  background: #00704a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order_button:hover {
+  background: #005a38;
+}
+
+/* 반응형 조정 */
+@media screen and (max-width: 1024px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product_img {
+    width: 60%;
+    max-width: 250px;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .count_cart {
+    flex-direction: column;
+  }
+
+  .btn_cart {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* HEADER */
+.header {
+  background-color: #f5e7c5;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto; /*블록 요소를 부모 영역에서 가로 가운데 정렬*/
+  display: flex; /*자손 수평 정렬*/
+  justify-content: space-between; /*요소를 양쪽 끝으로 붙임*/
+  align-items: flex-end; /*세로 아래 정렬*/
+}
+
+.gnb-inner {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  width: 1200px;
+}
+
+.logo {
+  width: 10%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  display: flex; /* 자손을 수평나열이 아닌 정가운데 오게 하려고 처리 */
+  justify-content: center; /*가로 중앙 정렬*/
+  align-items: center; /*세로 중앙 정렬*/
+  z-index: 50;
+}
+
+.nav {
+  /* background-color: lightseagreen; */
+  position: relative;
+  height: 100%;
+  align-items: center;
+  padding-top: 40px;
+  z-index: 10;
+}
+
+.menu {
+  /* background-color: lightsteelblue; */
+  width: 80%;
+  float: right;
+  display: flex;
+  height: 60px;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu li {
+  width: 100%;
+  height: 60px;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+}
+
+.menu a {
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #7e805d;
+  color: #f5e7c5;
+}
